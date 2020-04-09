@@ -1,6 +1,6 @@
-FROM alpine:3.7
+FROM alpine:latest
 
-ENV GAM_VERSION=4.40
+ENV GAM_VERSION=5.04
 
 COPY gam-runner.sh /usr/bin/gam.sh
 
@@ -29,4 +29,4 @@ CMD [ "--help" ]
 ARG VCS_REF
 
 LABEL org.label-schema.vcs-ref=$VCS_REF \
-    org.label-schema.vcs-url="https://github.com/broadinstitute/docker-gam"
+    org.label-schema.vcs-url="https://github.com/intracto/docker-gam"
